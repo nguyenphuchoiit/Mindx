@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
   <meta charset="UTF-8">
   <title>Garena Style</title>
@@ -7,156 +8,347 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light sticky-top">
-  <div class="container">
-    <a class="navbar-brand" href="#">
-      <img src="img/garena_logo_horizontal.svg" width="120" alt="Garena">
-    </a>
-    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="img/garena_logo_horizontal.svg" width="120" alt="Garena">
+      </a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#">Trang chủ</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Game</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Nền tảng</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Garena Mobile</a></li>
+              <li><a class="dropdown-item" href="#">Garena PC</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">Hỗ trợ</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Tài khoản</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Tuyển dụng</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Carousel -->
+  <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/banner_ca.jpg" class="d-block w-100" alt="Banner">
+        <div class="carousel-caption d-none d-md-block">
+          <p>Trở thành Chủ Công Tam Quốc trong cực phẩm<br>game đấu tướng chiến thuật mobile đầu tiên của Garena!</p>
+          <a class="btn btn-play mt-3" href="#">🎮 Chơi Ngay</a>
+        </div>
+      </div>
+      <!-- Thêm nhiều ảnh nếu cần -->
+      <div class="carousel-item active">
+        <img src="img/banner_fc.jpg" class="d-block w-100" alt="Banner">
+        <div class="carousel-caption d-none d-md-block">
+          <p>Trở thành Chủ Công Tam Quốc trong cực phẩm<br>game đấu tướng chiến thuật mobile đầu tiên của Garena!</p>
+          <a class="btn btn-play mt-3" href="#">🎮 Chơi Ngay</a>
+        </div>
+      </div>
+      <!--  -->
+      <div class="carousel-item active">
+        <img src="img/banner_ff.jpg" class="d-block w-100" alt="Banner">
+        <div class="carousel-caption d-none d-md-block">
+          <p>Trở thành Chủ Công Tam Quốc trong cực phẩm<br>game đấu tướng chiến thuật mobile đầu tiên của Garena!</p>
+          <a class="btn btn-play mt-3" href="#">🎮 Chơi Ngay</a>
+        </div>
+      </div>
+      <!--  -->
+      <div class="carousel-item active">
+        <img src="img/banner_esports.jpg" class="d-block w-100" alt="Banner">
+        <div class="carousel-caption d-none d-md-block">
+          <p>Đấu trường của danh vọng<br>Điểm đến của đam mê, khởi đầu của huyền thoại</p>
+          <a class="btn btn-play mt-3" href="#">🎮 Chơi Ngay</a>
+        </div>
+      </div>
+      <!--  -->
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
     </button>
-
-    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link" href="#">Trang chủ</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Game</a></li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Nền tảng</a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Garena Mobile</a></li>
-            <li><a class="dropdown-item" href="#">Garena PC</a></li>
-          </ul>
-        </li>
-        <li class="nav-item"><a class="nav-link" href="#">Hỗ trợ</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Tài khoản</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Tuyển dụng</a></li>
-      </ul>
-    </div>
+    <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
   </div>
-</nav>
+  <!-- tin tuc -->
+  <!-- About Section -->
+  <section class="text-center my-5 px-3 px-md-5">
+    <img src="img/garena_logo_v.svg" alt="Garena Logo" width="80" class="mb-3">
+    <h2 class="fw-bold mb-3">
+      Được thành lập vào năm 2009, Garena là nhà phát triển và<br>
+      phát hành trò chơi trực tuyến hàng đầu với dấu ấn toàn<br>
+      cầu tại hơn 160 thị trường.
+    </h2>
+    <p class="text-muted">
+      Garena là một phần của <a href="#" class="text-primary text-decoration-none fw-medium">Sea Limited</a>,
+      Tập đoàn Internet tiêu dùng hàng đầu toàn cầu. Sứ mệnh của Sea là nâng cao chất lượng cuộc sống
+      của người tiêu dùng và các doanh nghiệp nhỏ thông qua công nghệ.
+    </p>
+  </section>
 
-<!-- Carousel -->
-<div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="img/banner_ca.jpg" class="d-block w-100" alt="Banner">
-      <div class="carousel-caption d-none d-md-block">
-        <p>Trở thành Chủ Công Tam Quốc trong cực phẩm<br>game đấu tướng chiến thuật mobile đầu tiên của Garena!</p>
-        <a class="btn btn-play mt-3" href="#">🎮 Chơi Ngay</a>
-      </div>
-    </div>
-    <!-- Thêm nhiều ảnh nếu cần -->
-     <div class="carousel-item active">
-      <img src="img/banner_fc.jpg" class="d-block w-100" alt="Banner">
-      <div class="carousel-caption d-none d-md-block">
-        <p>Trở thành Chủ Công Tam Quốc trong cực phẩm<br>game đấu tướng chiến thuật mobile đầu tiên của Garena!</p>
-        <a class="btn btn-play mt-3" href="#">🎮 Chơi Ngay</a>
-      </div>
-    </div>
-    <!--  -->
-    <div class="carousel-item active">
-      <img src="img/banner_ff.jpg" class="d-block w-100" alt="Banner">
-      <div class="carousel-caption d-none d-md-block">
-        <p>Trở thành Chủ Công Tam Quốc trong cực phẩm<br>game đấu tướng chiến thuật mobile đầu tiên của Garena!</p>
-        <a class="btn btn-play mt-3" href="#">🎮 Chơi Ngay</a>
-      </div>
-    </div>
-    <!--  -->
-    <div class="carousel-item active">
-      <img src="img/banner_esports.jpg" class="d-block w-100" alt="Banner">
-      <div class="carousel-caption d-none d-md-block">
-        <p>Đấu trường của danh vọng<br>Điểm đến của đam mê, khởi đầu của huyền thoại</p>
-        <a class="btn btn-play mt-3" href="#">🎮 Chơi Ngay</a>
-      </div>
-    </div>
-    <!--  -->
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </button>
-</div>
-<!-- tin tuc -->
- <!-- About Section -->
-<section class="text-center my-5 px-3 px-md-5">
-  <img src="img/garena_logo_v.svg" alt="Garena Logo" width="80" class="mb-3">
-  <h2 class="fw-bold mb-3">
-    Được thành lập vào năm 2009, Garena là nhà phát triển và<br>
-    phát hành trò chơi trực tuyến hàng đầu với dấu ấn toàn<br>
-    cầu tại hơn 160 thị trường.
-  </h2>
-  <p class="text-muted">
-    Garena là một phần của <a href="#" class="text-primary text-decoration-none fw-medium">Sea Limited</a>, 
-    Tập đoàn Internet tiêu dùng hàng đầu toàn cầu. Sứ mệnh của Sea là nâng cao chất lượng cuộc sống 
-    của người tiêu dùng và các doanh nghiệp nhỏ thông qua công nghệ.
-  </p>
-</section>
+  <!-- about tin tức -->
+  <section class="py-5" style="background: url('assets/cloud-bg.jpg') no-repeat center center/cover;">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-5">Chúng tôi làm gì</h2>
 
-<!-- about tin tức -->
-<section class="py-5" style="background: url('assets/cloud-bg.jpg') no-repeat center center/cover;">
-  <div class="container">
-    <h2 class="text-center fw-bold mb-4">Chúng tôi làm gì</h2>
-    <div class="row align-items-center g-4">
-      
-      <!-- Carousel -->
-      <div class="col-lg-6">
-        <div id="gameCarousel" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner rounded">
-            <div class="carousel-item active">
-              <img src="img/gallery_ca.jpg" class="d-block w-100" alt="Free Fire">
-              <div class="carousel-caption text-start">
-                <h4 class="fw-bold">Free Fire</h4>
-                <p>Sống dai thành huyền thoại.<br>Game bắn súng sinh tồn trên điện thoại hấp dẫn.</p>
+      <!-- Section 1: Game -->
+      <div class="row align-items-center g-4 mb-5">
+        <div class="col-lg-6">
+          <div id="carouselGame" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner rounded">
+              <div class="carousel-item active">
+                <img src="img/gallery_ff.jpg" class="d-block w-100" alt="Free Fire">
+                <div class="carousel-caption text-start text-white">
+                  <h4 class="fw-bold">Free Fire</h4>
+                  <p>Sống dai thành huyền thoại.<br>Game bắn súng sinh tồn trên điện thoại hấp dẫn.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/gallery_aov.jpg" class="d-block w-100" alt="Liên Quân">
+                <div class="carousel-caption text-start text-white">
+                  <h4 class="fw-bold">Liên Quân Mobile</h4>
+                  <p>Đấu trường MOBA trên di động<br>đỉnh cao và chiến thuật.</p>
+                </div>
               </div>
             </div>
-            <div class="carousel-item">
-              <img src="img/gallery_aov.jpg" class="d-block w-100" alt="Liên Quân">
-              <div class="carousel-caption text-start">
-                <h4 class="fw-bold">Liên Quân Mobile</h4>
-                <p>Đấu trường MOBA trên di động<br>đỉnh cao và chiến thuật.</p>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselGame" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselGame" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="border rounded p-4 bg-white shadow-sm">
+            <h4 class="fw-bold text-danger"><i class="bi bi-controller me-2"></i>Game</h4>
+            <p>Garena là đơn vị vận hành độc quyền các tựa game hàng đầu trên PC và mobile tại nhiều thị trường trên thế
+              giới.</p>
+            <p>Chúng tôi luôn kết nối chặt chẽ với cộng đồng để đảm bảo trải nghiệm game hấp dẫn, lôi cuốn trên cả PC và
+              mobile.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 2: Esports -->
+      <div class="row align-items-center g-4 mb-5">
+        <div class="col-lg-6 order-lg-2">
+          <div id="carouselEsports" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner rounded">
+              <div class="carousel-item active">
+                <img src="img/gallery-esports02.jpg" class="d-block w-100" alt="Esports 1">
+                <div class="carousel-caption text-start text-white">
+                  <h4 class="fw-bold">Free Fire World Series</h4>
+                  <p>Giải đấu cộng đồng đến chuyên nghiệp<br>thu hút hàng triệu người theo dõi.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/gallery_esport01.jpg" class="d-block w-100" alt="Esports 2">
+                <div class="carousel-caption text-start text-white">
+                  <h4 class="fw-bold">Đấu Trường Danh Vọng</h4>
+                  <p>Vinh danh kỹ năng, gắn kết cộng đồng<br>thúc đẩy hệ sinh thái thể thao điện tử.</p>
+                </div>
               </div>
             </div>
-            <div class="carousel-item">
-              <img src="assets/callofduty.jpg" class="d-block w-100" alt="Call of Duty">
-              <div class="carousel-caption text-start">
-                <h4 class="fw-bold">Call of Duty</h4>
-                <p>Game bắn súng huyền thoại<br>phiên bản mobile đỉnh cao.</p>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselEsports" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselEsports" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+        </div>
+        <div class="col-lg-6 order-lg-1">
+          <div class="border rounded p-4 bg-white shadow-sm">
+            <h4 class="fw-bold text-danger"><i class="bi bi-trophy me-2"></i>Thể Thao Điện Tử</h4>
+            <p>Garena là đơn vị tiên phong và tổ chức hàng loạt giải đấu Esports – từ các giải cộng đồng quy mô nhỏ cho
+              đến những sự kiện chuyên nghiệp có lượng người xem thuộc hàng top thế giới.</p>
+            <p>Những giải đấu này tôn vinh kỹ năng xuất sắc của người chơi, thắt chặt mối liên kết với cộng đồng và góp
+              phần phát triển hệ sinh thái game bền vững.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 3: Xã hội -->
+      <div class="row align-items-center g-4">
+        <div class="col-lg-6">
+          <div id="carouselCSR" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner rounded">
+              <div class="carousel-item active">
+                <img src="img/gallery-community01.jpg" class="d-block w-100" alt="CSR 1">
+                <div class="carousel-caption text-start text-white">
+                  <h4 class="fw-bold">Cộng Đồng</h4>
+                  <p>Chắp cánh tương lai cho học sinh<br>có hoàn cảnh khó khăn vượt khó học tốt.</p>
+                </div>
               </div>
+              <div class="carousel-item">
+                <img src="img/gallery-community02.jpg" class="d-block w-100" alt="CSR 2">
+                <div class="carousel-caption text-start text-white">
+                  <h4 class="fw-bold">Chiến dịch cộng đồng</h4>
+                  <p>Kết nối người chơi với các hoạt động thiện nguyện<br>mang lại giá trị tích cực cho xã hội.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselCSR" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselCSR" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="border rounded p-4 bg-white shadow-sm">
+            <h4 class="fw-bold text-danger"><i class="bi bi-people-fill me-2"></i>Trách Nhiệm Xã Hội</h4>
+            <p>Garena thúc đẩy những trải nghiệm giải trí và kết nối xã hội thông qua game, giúp cộng đồng người chơi
+              tương tác và gắn kết với nhau.</p>
+            <p>Chúng tôi xây dựng các cộng đồng game thủ vững mạnh từ cấp địa phương, khu vực đến toàn cầu, đồng thời
+              mang đến cho người chơi những chiến dịch và sự kiện thú vị, gần gũi và truyền cảm hứng.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- nền tảng garena -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="row align-items-center g-4">
+
+        <!-- Hình nền tảng Garena -->
+        <div class="col-lg-6">
+          <img src="img/garena-platform.jpg" class="img-fluid rounded shadow" alt="Garena PC">
+        </div>
+
+        <!-- Nội dung văn bản -->
+        <div class="col-lg-6">
+          <h2 class="fw-bold mb-3">Nền tảng Garena</h2>
+          <h4 class="fw-semibold text-danger">Garena PC</h4>
+          <p class="text-muted">Nền tảng kết nối game thủ, giúp bạn sát cánh bên đồng đội để khám phá, chinh phục thử
+            thách, và hòa mình vào thế giới gaming với những tựa game hàng đầu chỉ có tại Garena.</p>
+          <a href="https://www.garena.vn/gpc" class="text-danger fw-bold text-decoration-none">Xem thêm <i
+              class="bi bi-arrow-right-circle-fill ms-1"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nghề Nghiệp -->
+  <section class="py-5 bg-white">
+    <div class="container">
+      <div class="row align-items-center g-4">
+
+        <!-- Nội dung bên trái -->
+        <div class="col-lg-6 order-lg-1 order-2">
+          <h2 class="fw-bold mb-3">Cơ hội Nghề nghiệp tại Garena</h2>
+          <p class="text-muted mb-4">
+            Chúng tôi mong muốn mang đến cho bạn một nền tảng để phát triển bản thân một cách vượt trội, khai phá tiềm
+            năng và tạo ra ảnh hưởng trong khu vực của bạn.
+          </p>
+          <a href="#" class="btn btn-danger rounded-pill px-4 py-2 fw-semibold">Ứng tuyển ngay hôm nay</a>
+        </div>
+
+        <!-- Hình ảnh bên phải có chữ đè -->
+        <div class="col-lg-6 order-lg-2 order-1 position-relative">
+          <img src="img/career_bg.jpg" class="img-fluid rounded shadow-sm w-100" alt="Career at Garena">
+          <div class="position-absolute top-50 start-50 translate-middle text-center text-white fw-bold"
+            style="font-size: 1.5rem; text-shadow: 1px 1px 3px rgba(0,0,0,0.7);">
+            Serve / Commit / Run / Stay / Humble
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- footer -->
+  <!-- Footer -->
+  <footer class="bg-white text-muted border-top pt-4">
+    <div class="container">
+      <div class="row gy-4">
+
+        <!-- Logo và địa chỉ -->
+        <div class="col-lg-6">
+          <img src="img/garena_logo_horizontal.svg" alt="Garena Logo" style="height: 40px;">
+          <p class="mt-3">
+            Địa chỉ Công ty: Tầng 6, Tòa nhà Capital Place, Số 29 Liễu Giai, Phường Ngọc Khánh, Quận Ba Đình, Thành phố
+            Hà Nội, Việt Nam
+          </p>
+        </div>
+
+        <!-- Điều hướng -->
+        <div class="col-lg-6">
+          <div class="row">
+            <div class="col-4">
+              <h6 class="fw-bold">Công ty</h6>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-muted text-decoration-none">Về Chúng tôi</a></li>
+                <li><a href="#" class="text-muted text-decoration-none">Cơ hội Nghề nghiệp</a></li>
+              </ul>
+            </div>
+            <div class="col-4">
+              <h6 class="fw-bold">Nền tảng</h6>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-muted text-decoration-none">Garena</a></li>
+                <li><a href="#" class="text-muted text-decoration-none">PC</a></li>
+              </ul>
+            </div>
+            <div class="col-4">
+              <h6 class="fw-bold">Dịch vụ</h6>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-muted text-decoration-none">Tài khoản</a></li>
+              </ul>
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#gameCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#gameCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon"></span>
-          </button>
         </div>
       </div>
 
-      <!-- Text Content -->
-      <div class="col-lg-6">
-        <div class="border rounded p-4 bg-white shadow-sm">
-          <h4 class="fw-bold text-danger"><i class="bi bi-exclamation-lg me-2"></i>Game</h4>
-          <p>Garena là đơn vị vận hành độc quyền các tựa game hàng đầu trên PC và mobile tại nhiều thị trường trên thế giới.</p>
-          <p>Với tinh thần của những game thủ đam mê và thấu hiểu người chơi, chúng tôi luôn kết nối chặt chẽ với cộng đồng
-            để đảm bảo họ luôn được trải nghiệm những tựa game hấp dẫn, lôi cuốn trên cả PC và mobile.</p>
+      <hr>
+
+      <!-- Bản quyền và điều khoản -->
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-center py-3">
+        <div>
+          <small>Bản quyền © Garena Online.<br>
+            Thương hiệu thuộc về chủ sở hữu. Mọi quyền được bảo hộ.</small>
+        </div>
+        <div class="d-flex align-items-center gap-3">
+          <a href="#" class="text-muted small text-decoration-none">Điều khoản dịch vụ</a> |
+          <a href="#" class="text-muted small text-decoration-none">Chính sách Riêng tư</a> |
+          <a href="#" class="text-muted small text-decoration-none">Câu hỏi thường gặp dành cho Phụ huynh</a>
+          <select class="form-select form-select-sm ms-3" style="width: 120px;">
+            <option selected>Việt Nam</option>
+            <option>English</option>
+          </select>
         </div>
       </div>
-
     </div>
-  </div>
-</section>
+
+    <!-- Nút scroll to top -->
+    <button onclick="scrollToTop()" id="scrollTopBtn" class="btn btn-light rounded-circle position-fixed"
+      style="bottom: 30px; right: 30px; width: 50px; height: 50px; box-shadow: 0 0 10px rgba(0,0,0,0.1); display: none;">
+      ↑
+    </button>
+  </footer>
 
 
 
 
 
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>
