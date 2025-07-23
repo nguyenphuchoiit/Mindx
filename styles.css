@@ -1,0 +1,45 @@
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .navbar {
+      background-color: white;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    .navbar-nav .nav-link {
+      color: #000 !important;
+      font-weight: 500;
+      margin: 0 10px;
+    }
+
+    .carousel-caption {
+      bottom: 20%;
+      text-align: right;
+    }
+
+    .carousel-caption h5 {
+      font-size: 2rem;
+      color: #fff;
+      text-shadow: 1px 1px 4px #000;
+    }
+
+    .carousel-caption p {
+      color: #fff;
+      font-size: 1.1rem;
+      text-shadow: 1px 1px 3px #000;
+    }
+
+    .btn-play {
+      background-color: #000;
+      color: #fff;
+      border-radius: 50px;
+      padding: 10px 20px;
+      font-weight: bold;
+      border: 2px solid red;
+    }
+
+    .btn-play:hover {
+      background-color: red;
+    }
