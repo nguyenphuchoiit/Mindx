@@ -1,0 +1,41 @@
+.hero {
+  background: url("img/page-gpc.jpg") no-repeat center center / cover;
+  color: white;
+  padding: 120px 0;
+  position: relative;
+  text-align: center;
+}
+
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.65);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.btn-download {
+  background-color: #ff4242;
+  color: white;
+  padding: 10px 30px;
+  font-weight: bold;
+  font-size: 18px;
+  border: none;
+  border-radius: 30px;
+}
+
+.btn-download i {
+  margin-right: 8px;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 80px 0;
+  }
+}

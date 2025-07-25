@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Garena Nền tảng</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="garena.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm py-3">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/garena_logo_horizontal.svg" alt="Garena" height="30">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav gap-3">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Trang chủ</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Game</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Free Fire</a></li>
+                            <li><a class="dropdown-item" href="#">Liên Quân</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Nền tảng</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">PC</a></li>
+                            <li><a class="dropdown-item" href="#">Mobile</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">Hỗ trợ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="account.html">Tài Khoản</a></li>
+                    <li class="nav-item"><a class="nav-link" href="recruitment.html">Tuyển dụng</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero section -->
+    <section class="hero position-relative text-white">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1 class="display-4 fw-bold">Garena</h1>
+            <p class="lead">Nền tảng Garena, giúp kết nối game thủ và những game được yêu thích nhất.</p>
+            <a href="game.zip" class="btn btn-download mt-3" download>
+                <i class="bi bi-display"></i> Tải về
+            </a>
+        </div>
+    </section>
+     <!-- Footer -->
+  <footer class="bg-white text-muted border-top pt-4">
+    <div class="container">
+      <div class="row gy-4">
+
+        <!-- Logo và địa chỉ -->
+        <div class="col-lg-6">
+          <img src="img/garena_logo_horizontal.svg" alt="Garena Logo" style="height: 40px;">
+          <p class="mt-3">
+            Địa chỉ Công ty: Tầng 6, Tòa nhà Capital Place, Số 29 Liễu Giai, Phường Ngọc Khánh, Quận Ba Đình, Thành phố
+            Hà Nội, Việt Nam
+          </p>
+        </div>
+
+        <!-- Điều hướng -->
+        <div class="col-lg-6">
+          <div class="row">
+            <div class="col-4">
+              <h6 class="fw-bold">Công ty</h6>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-muted text-decoration-none">Về Chúng tôi</a></li>
+                <li><a href="#" class="text-muted text-decoration-none">Cơ hội Nghề nghiệp</a></li>
+              </ul>
+            </div>
+            <div class="col-4">
+              <h6 class="fw-bold">Nền tảng</h6>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-muted text-decoration-none">Garena</a></li>
+                <li><a href="#" class="text-muted text-decoration-none">PC</a></li>
+              </ul>
+            </div>
+            <div class="col-4">
+              <h6 class="fw-bold">Dịch vụ</h6>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-muted text-decoration-none">Tài khoản</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- Bản quyền và điều khoản -->
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-center py-3">
+        <div>
+          <small>Bản quyền © Garena Online.<br>
+            Thương hiệu thuộc về chủ sở hữu. Mọi quyền được bảo hộ.</small>
+        </div>
+        <div class="d-flex align-items-center gap-3">
+          <a href="#" class="text-muted small text-decoration-none">Điều khoản dịch vụ</a> |
+          <a href="#" class="text-muted small text-decoration-none">Chính sách Riêng tư</a> |
+          <a href="#" class="text-muted small text-decoration-none">Câu hỏi thường gặp dành cho Phụ huynh</a>
+          <select class="form-select form-select-sm ms-3" style="width: 120px;">
+            <option selected>Việt Nam</option>
+            <option>English</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <!-- Nút scroll to top -->
+    <button onclick="scrollToTop()" id="scrollTopBtn" class="btn btn-light rounded-circle position-fixed"
+      style="bottom: 30px; right: 30px; width: 50px; height: 50px; box-shadow: 0 0 10px rgba(0,0,0,0.1); display: none;">
+      ↑
+    </button>
+  </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</body>
+
+</html>
