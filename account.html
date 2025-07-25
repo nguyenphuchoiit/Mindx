@@ -5,7 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="account.css">
   <title>Đăng nhập Garena</title>
-  
+<script>
+    // Tạo tài khoản mẫu cho việc đăng nhập (chỉ dùng để test)
+    const demoAccount = {
+      username: 'teacherit97@mindx.com',
+      password: 'mindx2025'
+    };
+    localStorage.setItem('accountData', JSON.stringify(demoAccount));
+</script> 
 </head>
 <body>
   <div class="header">
@@ -33,5 +40,26 @@
       </div>
     </form>
   </div>
+<script>
+    document.querySelector('form').addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const inputUsername = document.querySelector('input[type="text"]').value;
+      const inputPassword = document.querySelector('input[type="password"]').value;
+
+      const storedAccount = JSON.parse(localStorage.getItem('accountData'));
+
+      if (!storedAccount) {
+        alert('Không tìm thấy tài khoản trong localStorage!');
+      } else if (
+        inputUsername === storedAccount.username &&
+        inputPassword === storedAccount.password
+      ) {
+        alert('Đăng nhập thành công!');
+      } else {
+        alert('Tài khoản hoặc mật khẩu sai!');
+      }
+    });
+</script>
 </body>
 </html>

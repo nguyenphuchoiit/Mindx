@@ -1,0 +1,119 @@
+Account_Centerbody {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f7f7f7;
+  margin: 0;
+  color: #333;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ccc;
+}
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #e23b3b;
+}
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logout {
+  background: #e23b3b;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.main-nav {
+  background: #f9f9f9;
+  padding: 10px 20px;
+  display: flex;
+  gap: 20px;
+  border-bottom: 1px solid #ddd;
+}
+.main-nav a {
+  text-decoration: none;
+  color: #666;
+  font-weight: 500;
+}
+.main-nav a.active {
+  color: #e23b3b;
+  border-bottom: 2px solid #e23b3b;
+}
+.dashboard {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 20px;
+}
+.profile-card, .security-status, .activity-log {
+  background: #fff;
+  border-radius: 6px;
+  padding: 20px;
+  flex: 1 1 300px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #ddd;
+  margin: auto;
+}
+.username {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.userid, .coin {
+  text-align: center;
+  font-size: 14px;
+  color: gray;
+}
+.actions p {
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.actions button {
+  background: #ff4d4f;
+  border: none;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.progress-ring {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 20px auto;
+  background: conic-gradient(#f90 30%, #eee 30%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: #f90;
+}
+.security-warnings li {
+  color: red;
+  margin: 5px 0;
+}
+.activity-log table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.activity-log th, .activity-log td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  font-size: 14px;
+}
+.activity-log th {
+  background: #f0f0f0;
+}
